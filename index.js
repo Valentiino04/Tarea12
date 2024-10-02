@@ -18,7 +18,7 @@ const STATUS_DISPLAY = document.querySelector('.game-notification'),
 let gameActive = true,
   currentPlayer = "O"
 
-// ==================== FUNCTIONS ==================== //
+
 
 function main() {
   handleStatusDisplay(CURRENT_PLAYER_TURN())
@@ -56,7 +56,7 @@ function handleCellClick(clickedCellEvent) {
 }
 
 function handleCellPlayed(clickedCell , clickedCellIndex) {
-  GAME_STATE[clickedCellIndex] = currentPlayer // Agrega en la posición correspondiente el valor ya sea "X" u "O" en el estado actual del juego
+  GAME_STATE[clickedCellIndex] = currentPlayer // Agrega en la posición correspondiente el valor ya sea "X" u "O" 
   clickedCell.innerHTML = currentPlayer 
 }
 
